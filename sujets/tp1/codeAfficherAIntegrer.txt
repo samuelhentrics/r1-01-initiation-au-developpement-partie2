@@ -1,0 +1,8 @@
+void afficher (Fraction frac);
+// affiche à l'écran le contenu du paramètre fraction frac sous sa forme irréductible
+// pré-condition : le paramètre frac est une fraction irréductible
+
+void afficher (Fraction frac)
+{
+    cout << " " << frac.num << "/" << frac.den << " " ;
+}

@@ -1,0 +1,8 @@
+Fraction saisir();
+// Retourne une fraction irréductible à partir de 2 valeurs entières saisies au clavier
+// post-condition : la fraction retournée est une fraction irréductible normalisée
+
+Fraction saisir()
+{
+    return FRACTIONNULLE;
+}

@@ -1,0 +1,31 @@
+/**  Complément pour le module bibTableaux 
+     sous-programme d'affichage d'un tableau de personnes
+     -------------------------------------------------------**/
+
+void afficher (const Personne tab[],
+               unsigned short int lgTab);
+// But : affiche à l'écran le contenu d'un tableau tab contenant lgTab > 0 éléments de type Personne
+//       si lgTab = 0, affiche un message indiquant que le tableau n'a pas de valeur significative (tableau 'vide')
+
+
+
+void afficher (const Personne tab[],
+               unsigned short int lgTab)
+{
+    if (lgTab > 0)
+    {
+        cout << "{" << endl;
+        for (unsigned short int i = 0; i<lgTab-1; i++)
+        {
+            afficher(tab[i]) ;
+            cout << ", "<< endl ;
+        };
+        afficher (tab[lgTab-1]);
+        cout << endl <<  "} "<< endl;
+    }
+    else
+    {
+        cout << "tableau vide " << endl;
+    }
+}
+
